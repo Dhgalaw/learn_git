@@ -100,7 +100,7 @@ git clone https地址
 
 ```
 git add file
-git commit -g "注释"
+git commit -m "注释"
 ```
 
 本地提交到线上仓库

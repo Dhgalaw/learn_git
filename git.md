@@ -96,6 +96,12 @@ cd ./projectfile
 git clone https地址
 ```
 
+本地与远程关联
+
+```
+git remote add origin 地址
+```
+
 本地仓库操作
 
 ```

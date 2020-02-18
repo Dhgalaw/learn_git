@@ -90,10 +90,11 @@ mkdir projectfile
 cd ./projectfile
 ```
 
-克隆线上仓库到本地
+本地仓库操作
 
 ```
-git clone https地址
+git add file
+git commit -m "注释"
 ```
 
 本地与远程关联
@@ -102,22 +103,21 @@ git clone https地址
 git remote add origin 地址
 ```
 
-本地仓库操作
+本地提交到线上仓库（第一次）
 
 ```
-git add file
-git commit -m "注释"
-```
-
-本地提交到线上仓库
-
-```
-git push
+git push -u origin master
 ```
 
 
 
 
+
+克隆线上仓库到本地
+
+```
+git clone https地址
+```
 
 拉取线上仓库
 
@@ -164,6 +164,49 @@ git merge 被合并的分支名
 ```
 
 
+
+# git - tag
+
+##### 准备：
+
+```
+git init
+git add .
+git commit -m "first"
+git remote add origin 地址
+git push -u origin master
+```
+
+##### tag1提交
+
+```
+git add .
+git commit -m "知识点1"
+git tag 01_知识点1
+git tag   //查看tag
+git push --tags
+```
+
+##### 回退版本
+
+```
+git log   //查看提交历史
+git reset 版本号   //回退到某个版本
+git reset --hard 版本号   //强行回退
+git status    //查看状态
+```
+
+##### 获取某个tag：
+
+```
+git clone https地址
+```
+
+打开之后
+
+```
+git checkout tag名字
+```
 
 
 
